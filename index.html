@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Drag & Drop</title>
+  </head>
+  <body>
+    
+    
+
+    <main class="board">
+        <div class="colomn">
+            <div class="col-header start" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <h2>ToDo</h2>
+                    <article class="item" draggable="true" ondragstart="drag(event)" data-id="1">
+                        <h3>ToDo #1</h3>
+                    </article>
+                    <article class="item" draggable="true" ondragstart="drag(event)" data-id="2">
+                        <h3>ToDo #2</h3>
+                    </article>
+                    <article class="item" draggable="true" ondragstart="drag(event)" data-id="3">
+                        <h3>ToDo #3</h3>
+                    </article>
+                    
+            </div>
+            
+        </div>
+
+
+        <div class="colomn">
+            <div class="col-header progress" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <h2>In progress</h2>
+                    <article class="item" draggable="true" ondragstart="drag(event)" data-id="4">
+                    <h3>Progress #1</h3>
+                </article>
+                <article class="item" draggable="true" ondragstart="drag(event)" data-id="5">
+                    <h3>Progress #2</h3>
+                </article>
+                <article class="item" draggable="true" ondragstart="drag(event)" data-id="6">
+                    <h3>Progress #3</h3>
+                </article>
+            </div>
+            
+        </div>
+
+
+        <div class="colomn">
+            <div class="col-header done" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <h2>Done</h2>
+                    <article class="item" draggable="true" ondragstart="drag(event)" data-id="7">
+                    <h3>done #1</h3>
+                </article>
+                <article class="item" draggable="true" ondragstart="drag(event)" data-id="8">
+                    <h3>done #2</h3>
+                </article>
+                <article class="item" draggable="true" ondragstart="drag(event)" data-id="9">
+                    <h3>done #3</h3>
+                </article>
+            </div>
+          
+        </div>
+  </main>
+
+  <script src="app.js"></script>
+
+    
+  </body>
+</html>
+
